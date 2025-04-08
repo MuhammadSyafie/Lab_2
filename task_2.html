@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Registration Form</title>
+</head>
+<body>
+
+<h1>Conference Registration Form</h1>
+
+<form method="POST" action="task_2.php">
+    <label for="name">Full Name:</label><br>
+    <input type="text" name="name" placeholder="Enter your full name" required>
+    <br>
+    <br>
+    <label for="email">Email Address:</label><br>
+    <input type="email" name="email" placeholder="Enter your email address" required>
+    <br>
+    <br>
+    <label for="age">Age:</label><br>
+    <input type="number" name="age" min="18" max="66" placeholder="18" required style="width: 60px;">
+    <br>
+    <br>
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male" required> Male<br>
+    <input type="radio" name="gender" value="Female"> Female
+    <br>
+    <br>
+    <label for="country">Country of Residence:</label><br>
+    <select name="country" required>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Brunei">Brunei</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Singapore">Singapore</option>
+    </select>
+    <br>
+    <br>
+    <label>Area of Interest:</label><br>
+    <input type="checkbox" name="interest[]" value="Software Development"> Software Development<br>
+    <input type="checkbox" name="interest[]" value="Data Science"> Data Science<br>
+    <input type="checkbox" name="interest[]" value="Cybersecurity"> Cybersecurity<br>
+    <input type="checkbox" name="interest[]" value="Artificial Intelligence"> Artificial Intelligence
+    <br>
+    <br>
+    <label>Experience Level:</label><br>
+    <input type="radio" name="experience" value="Beginner" required> Beginner<br>
+    <input type="radio" name="experience" value="Intermediate"> Intermediate<br>
+    <input type="radio" name="experience" value="Advanced"> Advanced
+    <br>
+    <br>
+    <label for="comments">Comments or Questions:</label><br>
+    <textarea name="comments" rows="4" cols="40" placeholder="Any comments or questions?"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
